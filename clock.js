@@ -2,7 +2,11 @@
 window.onload = function(){
 
   var clock= document.getElementById('clock');
-  writeDate();
+  writeDate();//selleks et lehe laadimisel oleks kohe kell näha
+  //käivitan invervalli
+  window.setInterval(function(){
+    writeDate();
+  }, 1000);
 };
 
 //võtab aja ja kirjutab #clock elemendi sisse
